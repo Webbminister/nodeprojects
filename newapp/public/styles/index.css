@@ -1,0 +1,15 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: rgb(223, 226, 225);
+}
+
+.home{
+    position: relative;
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    top: 50px;
+}
