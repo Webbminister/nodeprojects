@@ -9,16 +9,16 @@ const port = 5000;
 
 app.use(express.static("public"))
 
-// app.use((req, res,next) =>{
-//     const now = moment();
-//     console.log(now);
-//     if(now.isoWeekday() <= 5 && now.hours() >= 9 && now.hours() < 17){
-//         console.log("allow access to app");
-//         next();
-//     }else{
-//         res.send("Sorry, the app is only available during working hours (Mon - Fri, 9 AM to 5 PM).");
-//     }
-// });
+app.use((req, res,next) =>{
+    const now = moment();
+    console.log(now);
+    if(now.isoWeekday() <= 5 && now.hours() >= 9 && now.hours() < 17){
+        console.log("allow access to app");
+        next();
+    }else{
+        res.send("Sorry, the app is only available during working hours (Mon - Fri, 9 AM to 5 PM).");
+    }
+});
 
 app.get("/",(req,res) =>{
     const date = new Date();
