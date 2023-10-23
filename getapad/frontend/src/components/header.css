@@ -1,0 +1,36 @@
+
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color:#281f1a;
+    height: 60px;
+    align-items: center;
+    padding:10px;
+}
+    /* justify-content: space-between; */
+
+.brand_name{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav_items{
+    margin: 10px;
+}
+.nav_links {
+    position: relative;
+    left: -10px;
+    padding-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.nav_links:hover{
+background-color: #fff;
+opacity: 0.7;
+color: #281f1a;
+}
